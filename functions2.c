@@ -120,7 +120,7 @@ int print_reverse(va_list types, char buffer[],
 
 		str = ")Null(";
 	}
-	for (a = 0; str[a]; i++)
+	for (a = 0; str[a]; a++)
 		;
 
 	for (a = a - 1; a >= 0; a--)
@@ -164,7 +164,7 @@ int print_rot13string(va_list types, char buffer[],
 		str = "(AHYY)";
 	for (a = 0; str[a]; a++)
 	{
-		for (b = 0; in[b]; j++)
+		for (b = 0; in[b]; b++)
 		{
 			if (in[b] == str[a])
 			{
